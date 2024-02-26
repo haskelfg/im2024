@@ -4,3 +4,5 @@ from csv import reader, writer
 with open('products.csv', encoding='utf-8') as data_file:
     # Открыть файл с данными как объект reader
     csv_data = reader(data_file, delimiter=',')
+    # Линейный поиск
+    for row in csv_data:
